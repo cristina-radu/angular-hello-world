@@ -1,0 +1,9 @@
+<br>
+<div><span>School Name: </span><span>{{schoolName}}</span></div>
+<div>Enter school name: <input type="text" [(ngModel)]="schoolName"></div>
+<app-student (studentNameChanged)="onStudentNameChanged($event)" [studentName]="rootStudentName"></app-student>
+<mat-list role="list">
+  <mat-list-item role="listitem">Item 1</mat-list-item>
+  <mat-list-item role="listitem">Item 2</mat-list-item>
+  <mat-list-item role="listitem">Item 3</mat-list-item>
+</mat-list>
